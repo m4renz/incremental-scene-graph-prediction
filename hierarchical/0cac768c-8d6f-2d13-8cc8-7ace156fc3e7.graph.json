@@ -1,0 +1,61 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 2.0
+    },
+    {
+      "id": "chair:2",
+      "centrality": 0.0
+    },
+    {
+      "id": "table:3",
+      "centrality": 0.0
+    },
+    {
+      "id": "wall:4",
+      "centrality": 1.255442827739993
+    },
+    {
+      "id": "chair:5",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "weak_touching",
+      "weight": 0.11183678265010126,
+      "weight_inv": 8.9416020052066,
+      "overlap_obb": 0.22367356530020252,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.04270702249748459,
+        0.5742170559457057,
+        -0.1407890976077787
+      ],
+      "log_obb_volume_ratio": 1.902312601346599,
+      "log_geom_volume_ratio": 1.064058279052724,
+      "source": "chair:2",
+      "target": "wall:4"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.12022373316680969,
+      "weight_inv": 8.317825221851214,
+      "overlap_obb": 0.24044746633361938,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -0.8656985387835553,
+        0.03722865703982725,
+        -0.3536322685861423
+      ],
+      "log_obb_volume_ratio": -2.2710455076237688,
+      "log_geom_volume_ratio": 1.6740322199193782,
+      "source": "wall:4",
+      "target": "floor:1"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 0.19758943426357237
+    },
+    {
+      "id": "wall:6",
+      "centrality": 0.0
+    },
+    {
+      "id": "wall:7",
+      "centrality": 1.2038078077794905
+    },
+    {
+      "id": "curtain:8",
+      "centrality": 0.0
+    },
+    {
+      "id": "curtain:9",
+      "centrality": 0.0
+    },
+    {
+      "id": "window:10",
+      "centrality": 0.0
+    },
+    {
+      "id": "cabinet:11",
+      "centrality": 0.0
+    },
+    {
+      "id": "table:12",
+      "centrality": 2.0
+    },
+    {
+      "id": "object:13",
+      "centrality": 0.0
+    },
+    {
+      "id": "object:14",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:26",
+      "centrality": 0.0
+    },
+    {
+      "id": "object:27",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:28",
+      "centrality": 0.1599876199413956
+    },
+    {
+      "id": "chair:29",
+      "centrality": 0.23737883992045092
+    },
+    {
+      "id": "object:30",
+      "centrality": 0.0
+    },
+    {
+      "id": "object:31",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:32",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.17108498946224465,
+      "weight_inv": 5.845048143283674,
+      "overlap_obb": 0.3415679213040335,
+      "overlap_geometry": 0.000602057620455793,
+      "center_difference": [
+        -0.3683840554376727,
+        0.3283111679691262,
+        0.4780945634416327
+      ],
+      "log_obb_volume_ratio": 0.703551375246684,
+      "log_geom_volume_ratio": 1.0714009023675861,
+      "source": "floor:1",
+      "target": "table:12"
+    },
+    {
+      "type": "touching",
+      "weight": 0.24208418104224494,
+      "weight_inv": 4.1307944851856915,
+      "overlap_obb": 0.48397357873669533,
+      "overlap_geometry": 0.00019478334779452129,
+      "center_difference": [
+        0.9132571422498633,
+        -0.4508374213634754,
+        -0.27126724488068843
+      ],
+      "log_obb_volume_ratio": -0.8821659684978251,
+      "log_geom_volume_ratio": 1.7047419722226442,
+      "source": "wall:6",
+      "target": "table:12"
+    },
+    {
+      "type": "touching",
+      "weight": 0.050124389899474334,
+      "weight_inv": 19.95036751580466,
+      "overlap_obb": 0.1000894116052986,
+      "overlap_geometry": 0.00015936819365006287,
+      "center_difference": [
+        -0.25713423426705695,
+        -1.2543068544399183,
+        -0.6010105465738567
+      ],
+      "log_obb_volume_ratio": 0.7109777339410646,
+      "log_geom_volume_ratio": 1.16611171773465,
+      "source": "wall:7",
+      "target": "floor:1"
+    },
+    {
+      "type": "touching",
+      "weight": 0.044644160223767396,
+      "weight_inv": 22.399346185206678,
+      "overlap_obb": 0.08916436740802919,
+      "overlap_geometry": 0.00012395303950560446,
+      "center_difference": [
+        -0.6255182897047297,
+        -0.9259956864707921,
+        -0.12291598313222396
+      ],
+      "log_obb_volume_ratio": 0.500209362484007,
+      "log_geom_volume_ratio": 1.2493731466423197,
+      "source": "wall:7",
+      "target": "table:12"
+    },
+    {
+      "type": "within",
+      "weight": 0.48050464278926563,
+      "weight_inv": 2.0811453437684446,
+      "overlap_obb": 0.9610092855785313,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.5491151021006371,
+        -0.28641404041514384,
+        -0.5596493217396223
+      ],
+      "log_obb_volume_ratio": -4.661538365556865,
+      "log_geom_volume_ratio": 1.842407993238665,
+      "source": "curtain:8",
+      "target": "wall:7"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.38956681428110657,
+      "weight_inv": 2.5669537633624318,
+      "overlap_obb": 0.7791336285622131,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -1.215945818766363,
+        0.6739664478068221,
+        -0.30538742613875014
+      ],
+      "log_obb_volume_ratio": -9.588480375971548,
+      "log_geom_volume_ratio": 2.8726593186725378,
+      "source": "curtain:9",
+      "target": "wall:7"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.4184427596681882,
+      "weight_inv": 2.389813127111981,
+      "overlap_obb": 0.8368855193363764,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -0.2206724874985055,
+        -0.05000838781574668,
+        -0.5141865242144155
+      ],
+      "log_obb_volume_ratio": -2.191292697884364,
+      "log_geom_volume_ratio": 1.6492952438844295,
+      "source": "window:10",
+      "target": "wall:7"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.30388520483392395,
+      "weight_inv": 3.2907163102807493,
+      "overlap_obb": 0.6077704096678479,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.9103790126223886,
+        0.4181307998002102,
+        0.03582544573280366
+      ],
+      "log_obb_volume_ratio": -1.647425657577764,
+      "log_geom_volume_ratio": 2.2843052003955067,
+      "source": "cabinet:11",
+      "target": "table:12"
+    },
+    {
+      "type": "within",
+      "weight": 0.5000088035913167,
+      "weight_inv": 1.999964786254748,
+      "overlap_obb": 0.9999998996055612,
+      "overlap_geometry": 1.7707577072229207e-05,
+      "center_difference": [
+        -0.06857730862777145,
+        0.28343981734856427,
+        -0.26885765917305016
+      ],
+      "log_obb_volume_ratio": -3.5888758338244484,
+      "log_geom_volume_ratio": 2.8923355891797335,
+      "source": "object:13",
+      "target": "table:12"
+    },
+    {
+      "type": "touching",
+      "weight": 0.10381702544162173,
+      "weight_inv": 9.632331457640527,
+      "overlap_obb": 0.20742155995837672,
+      "overlap_geometry": 0.00021249092486675048,
+      "center_difference": [
+        -0.07346935584740477,
+        0.40822313514912345,
+        -0.5621902158676758
+      ],
+      "log_obb_volume_ratio": -2.5531985750062014,
+      "log_geom_volume_ratio": 2.483298638942579,
+      "source": "object:14",
+      "target": "table:12"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.40219817669784735,
+      "weight_inv": 2.486336482701793,
+      "overlap_obb": 0.8042192776249724,
+      "overlap_geometry": 0.00017707577072229207,
+      "center_difference": [
+        0.37365666447576695,
+        0.569142258920571,
+        -0.03730099381203711
+      ],
+      "log_obb_volume_ratio": -1.636163913928824,
+      "log_geom_volume_ratio": 2.0686066433110994,
+      "source": "chair:26",
+      "target": "table:12"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.39651339351948434,
+      "weight_inv": 2.521982904849495,
+      "overlap_obb": 0.7926372203433796,
+      "overlap_geometry": 0.00038956669558904257,
+      "center_difference": [
+        0.04260557773682094,
+        0.13256748257454787,
+        0.06913961459000928
+      ],
+      "log_obb_volume_ratio": 1.3374035865971576,
+      "log_geom_volume_ratio": 1.0380760563052025,
+      "source": "object:27",
+      "target": "chair:29"
+    },
+    {
+      "type": "touching",
+      "weight": 0.19817501120520928,
+      "weight_inv": 5.046044876790772,
+      "overlap_obb": 0.39617294663969627,
+      "overlap_geometry": 0.00017707577072229207,
+      "center_difference": [
+        -0.5145618404258632,
+        0.5808425427263952,
+        0.12514593904678906
+      ],
+      "log_obb_volume_ratio": -2.448402414003323,
+      "log_geom_volume_ratio": 1.6195558397944967,
+      "source": "chair:28",
+      "target": "wall:7"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.19930639983295478,
+      "weight_inv": 5.017400348599607,
+      "overlap_obb": 0.39861279966590957,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -1.1400801301305927,
+        -0.3451531437443969,
+        0.002229955914565096
+      ],
+      "log_obb_volume_ratio": -1.2247138106129059,
+      "log_geom_volume_ratio": 2.023429575726995,
+      "source": "chair:28",
+      "target": "table:12"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.15552916592617858,
+      "weight_inv": 6.42966220544542,
+      "overlap_obb": 0.31105833185235715,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -0.43250072625642355,
+        0.246258276818897,
+        -0.08212915343544347
+      ],
+      "log_obb_volume_ratio": 1.2008811526499752,
+      "log_geom_volume_ratio": 1.1196973742903589,
+      "source": "chair:29",
+      "target": "chair:28"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.3655489709186584,
+      "weight_inv": 2.7356115857388614,
+      "overlap_obb": 0.7298584114422607,
+      "overlap_geometry": 0.0012395303950560445,
+      "center_difference": [
+        0.5436859227399329,
+        -0.10559243395448359,
+        0.46693062248721007
+      ],
+      "log_obb_volume_ratio": -4.0035748054186575,
+      "log_geom_volume_ratio": 1.813063518308809,
+      "source": "object:30",
+      "target": "wall:7"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.26801488495756753,
+      "weight_inv": 3.7311360529782562,
+      "overlap_obb": 0.5359589396068462,
+      "overlap_geometry": 7.083030828891683e-05,
+      "center_difference": [
+        -0.08183236696479679,
+        -1.0315881204252757,
+        0.3440146393549861
+      ],
+      "log_obb_volume_ratio": -2.0026256010754993,
+      "log_geom_volume_ratio": 2.265192872931872,
+      "source": "object:30",
+      "target": "table:12"
+    },
+    {
+      "type": "within",
+      "weight": 0.49999998699414183,
+      "weight_inv": 2.000000052023434,
+      "overlap_obb": 0.9999999739882837,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.20407804745824176,
+        -0.1587879396054701,
+        0.2715082907184472
+      ],
+      "log_obb_volume_ratio": -2.5372639680099884,
+      "log_geom_volume_ratio": 2.929283936424379,
+      "source": "object:31",
+      "target": "table:12"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.3255320572310178,
+      "weight_inv": 3.071894081664399,
+      "overlap_obb": 0.6510641144620356,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -0.4250052897424009,
+        -0.7178250237868491,
+        -0.11206731296853478
+      ],
+      "log_obb_volume_ratio": -0.6171761141731411,
+      "log_geom_volume_ratio": 1.7382990205865863,
+      "source": "chair:32",
+      "target": "table:12"
+    }
+  ]
+}

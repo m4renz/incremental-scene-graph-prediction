@@ -1,0 +1,153 @@
+ckpt_path: null
+data:
+  class_path: ssg_tools.dataset.hetero_dataset.HeteroSceneGraphModule
+  init_args:
+    batch_size: 64
+    corruption_rate: 0.0
+    edges_to_remove:
+    - - new
+      - to
+      - old
+    embedding_type: clip
+    num_processes: 1
+    num_workers: 12
+    persistent_workers: true
+    pin_memory: true
+    root: /path/to/data/root
+    scan_dir: null
+    shuffle: true
+lr_scheduler:
+  class_path: torch.optim.lr_scheduler.StepLR
+  init_args:
+    gamma: 0.05
+    last_epoch: -1
+    step_size: 30
+    verbose: deprecated
+model:
+  class_path: ssg_tools.models.ksgn.IncrementalKSGN
+  init_args:
+    attn_dropout: 0.5
+    dropout: 0.5
+    edge_emb_dim: 64
+    edges_to_predict:
+    - - new
+      - to
+      - new
+    embedding_type: clip
+    gamma_edge: 40.0
+    gnn_hidden_dim: 256
+    gnn_num_layers: 2
+    gnn_out_dim: 128
+    gnn_type: sage
+    heads: 8
+    log_hyperparameters: true
+    lr: 0.00014981950627824397
+    metadata:
+      edge_types:
+      - - old
+        - to
+        - old
+      - - new
+        - to
+        - new
+      - - old
+        - to
+        - new
+      node_types:
+      - old
+      - new
+    nodes_to_predict:
+    - new
+    norm: layer
+    num_edge_classes: 16
+    num_node_classes: 27
+    pointnet_output_dim: 32
+    sync_dist: true
+    weights_edge: edges_log_scaled
+    weights_node: nodes_log_scaled
+    weights_path: artifacts/weights.json
+optimizer:
+  class_path: torch.optim.Adam
+  init_args:
+    amsgrad: false
+    betas:
+    - 0.9
+    - 0.999
+    capturable: false
+    differentiable: false
+    eps: 1.0e-08
+    foreach: null
+    fused: null
+    lr: 0.00014981950627824397
+    maximize: false
+    weight_decay: 0.0
+seed_everything: 0
+trainer:
+  accelerator: auto
+  accumulate_grad_batches: 1
+  barebones: false
+  benchmark: null
+  callbacks:
+  - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+    init_args:
+      dirpath: null
+      filename: last
+      monitor: epoch
+      verbose: false
+      save_last: null
+      save_top_k: 1
+      save_weights_only: false
+      mode: max
+      auto_insert_metric_name: true
+      every_n_train_steps: null
+      train_time_interval: null
+      every_n_epochs: null
+      save_on_train_epoch_end: null
+      enable_version_counter: true
+  - class_path: lightning.pytorch.callbacks.EarlyStopping
+    init_args:
+      monitor: val_loss
+      min_delta: 0.0
+      patience: 5
+      verbose: false
+      mode: min
+      strict: true
+      check_finite: true
+      stopping_threshold: null
+      divergence_threshold: null
+      check_on_train_epoch_end: null
+      log_rank_zero_only: false
+  check_val_every_n_epoch: 1
+  default_root_dir: null
+  detect_anomaly: false
+  deterministic: null
+  devices: auto
+  enable_checkpointing: null
+  enable_model_summary: null
+  enable_progress_bar: null
+  fast_dev_run: false
+  gradient_clip_algorithm: null
+  gradient_clip_val: null
+  inference_mode: true
+  limit_predict_batches: null
+  limit_test_batches: null
+  limit_train_batches: null
+  limit_val_batches: null
+  log_every_n_steps: null
+  logger: null
+  max_epochs: 100
+  max_steps: -1
+  max_time: null
+  min_epochs: null
+  min_steps: null
+  num_nodes: 1
+  num_sanity_val_steps: null
+  overfit_batches: 0.0
+  plugins: null
+  precision: null
+  profiler: null
+  reload_dataloaders_every_n_epochs: 0
+  strategy: ddp_find_unused_parameters_true
+  sync_batchnorm: false
+  use_distributed_sampler: true
+  val_check_interval: null

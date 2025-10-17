@@ -1,0 +1,53 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 0.0
+    },
+    {
+      "id": "sofa:4",
+      "centrality": 0.0
+    },
+    {
+      "id": "sofa:5",
+      "centrality": 2.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.12205875037607718,
+      "weight_inv": 8.192775994501696,
+      "overlap_obb": 0.24171009334474694,
+      "overlap_geometry": 0.0024074074074074076,
+      "center_difference": [
+        -0.11562864929785666,
+        0.201987389135255,
+        0.2944020430788724
+      ],
+      "log_obb_volume_ratio": 1.848018691496783,
+      "log_geom_volume_ratio": 1.2002812536362057,
+      "source": "floor:1",
+      "target": "sofa:5"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.4384863448019564,
+      "weight_inv": 2.2805727290131528,
+      "overlap_obb": 0.8769726896039128,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.4593471662830842,
+        -0.2462126726121978,
+        -0.10451869965477556
+      ],
+      "log_obb_volume_ratio": 5.611483974107024,
+      "log_geom_volume_ratio": 1.869397550801357,
+      "source": "sofa:4",
+      "target": "sofa:5"
+    }
+  ]
+}

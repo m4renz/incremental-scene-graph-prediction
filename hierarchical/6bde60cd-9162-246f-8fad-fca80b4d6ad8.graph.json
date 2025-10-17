@@ -1,0 +1,93 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 0.0
+    },
+    {
+      "id": "floor:2",
+      "centrality": 2.0
+    },
+    {
+      "id": "wall:3",
+      "centrality": 0.9638130738585897
+    },
+    {
+      "id": "sofa:7",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:8",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.2001573205788947,
+      "weight_inv": 4.996070076816584,
+      "overlap_obb": 0.39977113007620235,
+      "overlap_geometry": 0.0005435110815870523,
+      "center_difference": [
+        0.374314132217465,
+        -0.3366921127550524,
+        0.02758037434972782
+      ],
+      "log_obb_volume_ratio": 1.5960456503053275,
+      "log_geom_volume_ratio": 1.2440632318391427,
+      "source": "floor:1",
+      "target": "floor:2"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.00047579802462401055,
+      "weight_inv": 2101.732138947464,
+      "overlap_obb": 0.0009515960492480211,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.2442867887720621,
+        -1.2853671704160183,
+        -0.6308090045615993
+      ],
+      "log_obb_volume_ratio": 1.179727481020894,
+      "log_geom_volume_ratio": 0.8743638078836932,
+      "source": "wall:3",
+      "target": "floor:2"
+    },
+    {
+      "type": "touching",
+      "weight": 0.1372182169174508,
+      "weight_inv": 7.287662108316059,
+      "overlap_obb": 0.2739533128734909,
+      "overlap_geometry": 0.0004831209614107132,
+      "center_difference": [
+        -0.6102408934322416,
+        0.6012180040828694,
+        0.21512024140270103
+      ],
+      "log_obb_volume_ratio": 2.365842248626924,
+      "log_geom_volume_ratio": 1.317702602337642,
+      "source": "sofa:7",
+      "target": "wall:3"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.08363303789680011,
+      "weight_inv": 11.956997200483865,
+      "overlap_obb": 0.16726607579360023,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.3703860788150687,
+        -0.08479448199634532,
+        -0.40532003737421296
+      ],
+      "log_obb_volume_ratio": 1.063094452333186,
+      "log_geom_volume_ratio": 0.8450350844123442,
+      "source": "chair:8",
+      "target": "floor:2"
+    }
+  ]
+}

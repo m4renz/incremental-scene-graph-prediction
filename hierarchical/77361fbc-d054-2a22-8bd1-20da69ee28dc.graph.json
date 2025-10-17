@@ -1,0 +1,153 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 2.0
+    },
+    {
+      "id": "table:2",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:3",
+      "centrality": 0.4826392966611536
+    },
+    {
+      "id": "chair:4",
+      "centrality": 0.0
+    },
+    {
+      "id": "table:5",
+      "centrality": 0.0
+    },
+    {
+      "id": "plant:6",
+      "centrality": 0.0
+    },
+    {
+      "id": "plant:7",
+      "centrality": 0.0
+    },
+    {
+      "id": "pillow:8",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "part_within",
+      "weight": 0.3202813937882231,
+      "weight_inv": 3.122254428120858,
+      "overlap_obb": 0.6399999973877551,
+      "overlap_geometry": 0.0005627901886910438,
+      "center_difference": [
+        -0.6417857952053854,
+        1.3936650269483037,
+        -0.34432968694137855
+      ],
+      "log_obb_volume_ratio": -0.6877652096715181,
+      "log_geom_volume_ratio": 3.541093300376988,
+      "source": "table:2",
+      "target": "floor:1"
+    },
+    {
+      "type": "touching",
+      "weight": 0.19666375119291993,
+      "weight_inv": 5.084821142351936,
+      "overlap_obb": 0.39181109548853343,
+      "overlap_geometry": 0.0015164068973064237,
+      "center_difference": [
+        -0.43154584215449554,
+        0.19278532288490435,
+        -0.3026376071778516
+      ],
+      "log_obb_volume_ratio": -0.1449986030523617,
+      "log_geom_volume_ratio": 2.7519124540290796,
+      "source": "chair:3",
+      "target": "floor:1"
+    },
+    {
+      "type": "touching",
+      "weight": 0.18651815493174434,
+      "weight_inv": 5.361408386041275,
+      "overlap_obb": 0.37281744701233105,
+      "overlap_geometry": 0.00021886285115762816,
+      "center_difference": [
+        1.3256140447726805,
+        0.4708205962873535,
+        -0.33565254944756484
+      ],
+      "log_obb_volume_ratio": -0.390398351855558,
+      "log_geom_volume_ratio": 3.0824311113010414,
+      "source": "chair:4",
+      "target": "floor:1"
+    },
+    {
+      "type": "touching",
+      "weight": 0.243704484198177,
+      "weight_inv": 4.1033303235685,
+      "overlap_obb": 0.4870806741196176,
+      "overlap_geometry": 0.0003282942767364422,
+      "center_difference": [
+        0.5849610791478773,
+        0.3668153129445624,
+        -0.38772118606302197
+      ],
+      "log_obb_volume_ratio": -0.8285175328054906,
+      "log_geom_volume_ratio": 3.4972587436946885,
+      "source": "table:5",
+      "target": "floor:1"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.42488362329153206,
+      "weight_inv": 2.3535856530621193,
+      "overlap_obb": 0.8497203474006733,
+      "overlap_geometry": 4.689918239092032e-05,
+      "center_difference": [
+        -1.2810008192699918,
+        0.1328462929312053,
+        -0.1933697970554593
+      ],
+      "log_obb_volume_ratio": -1.562426820295946,
+      "log_geom_volume_ratio": 4.505197569525375,
+      "source": "plant:6",
+      "target": "floor:1"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.3500859706164348,
+      "weight_inv": 2.8564412285336376,
+      "overlap_obb": 0.6999999775641029,
+      "overlap_geometry": 0.00017196366876670783,
+      "center_difference": [
+        0.7653608558569119,
+        -0.24429433500637732,
+        -0.20437264063507943
+      ],
+      "log_obb_volume_ratio": -1.6954986533456706,
+      "log_geom_volume_ratio": 4.627113543380396,
+      "source": "plant:7",
+      "target": "floor:1"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.4485794317603321,
+      "weight_inv": 2.229259589713605,
+      "overlap_obb": 0.8964710088455974,
+      "overlap_geometry": 0.0006878546750668313,
+      "center_difference": [
+        0.2517929786106037,
+        -0.1843085107850959,
+        -0.21260885279172492
+      ],
+      "log_obb_volume_ratio": 5.645204303316284,
+      "log_geom_volume_ratio": 1.2916794957250481,
+      "source": "pillow:8",
+      "target": "chair:3"
+    }
+  ]
+}

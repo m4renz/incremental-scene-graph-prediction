@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]"]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "ssg_tools"
+authors = [
+    {name = "Marian Renz", email = "marianrenz@web.de"},
+]
+description = 'Tools for processing and loading the 3DSSG dataset'
+readme = "README.md"
+requires-python = "==3.12.2"
+license = {text = "TBD"}
+
+dynamic = ["version", "dependencies"]
+
+[tool.setuptools_scm]
+write_to = "ssg_tools/_version.py"
+version_scheme = "release-branch-semver"
+
+[tool.setuptools.packages.find]
+include = [
+    'ssg_tools'
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+#optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
+
+# [project.scripts]
+# ssg_tools = "ssg_tools.__main__"

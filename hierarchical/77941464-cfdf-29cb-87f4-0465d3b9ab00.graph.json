@@ -1,0 +1,73 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 0.0
+    },
+    {
+      "id": "table:7",
+      "centrality": 2.0
+    },
+    {
+      "id": "chair:14",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:15",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.030290830392719088,
+      "weight_inv": 33.01329105326762,
+      "overlap_obb": 0.06043280695989486,
+      "overlap_geometry": 0.00014885382554331647,
+      "center_difference": [
+        0.2543877305724481,
+        -0.22610138280030956,
+        0.7145738936941692
+      ],
+      "log_obb_volume_ratio": 6.26041455817564,
+      "log_geom_volume_ratio": 1.1071073477558069,
+      "source": "floor:1",
+      "target": "table:7"
+    },
+    {
+      "type": "within",
+      "weight": 0.4993473477447911,
+      "weight_inv": 2.0026140211143866,
+      "overlap_obb": 0.9986946954895822,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        0.3288298179716844,
+        -0.5258179716844842,
+        -0.15906038717133797
+      ],
+      "log_obb_volume_ratio": 78.45461251235969,
+      "log_geom_volume_ratio": 2.823339702060385,
+      "source": "chair:14",
+      "target": "table:7"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.4016018931661036,
+      "weight_inv": 2.490028102498006,
+      "overlap_obb": 0.8030549325066639,
+      "overlap_geometry": 0.00014885382554331647,
+      "center_difference": [
+        0.23265104702196382,
+        0.37800325736579515,
+        0.05707369104095261
+      ],
+      "log_obb_volume_ratio": 21.78928859017592,
+      "log_geom_volume_ratio": 1.3770786360316132,
+      "source": "chair:15",
+      "target": "table:7"
+    }
+  ]
+}

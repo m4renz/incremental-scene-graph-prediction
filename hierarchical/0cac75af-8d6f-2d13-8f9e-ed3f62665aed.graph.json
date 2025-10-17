@@ -1,0 +1,149 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 0.5836994192040148
+    },
+    {
+      "id": "wall:7",
+      "centrality": 0.0
+    },
+    {
+      "id": "counter:8",
+      "centrality": 2.0
+    },
+    {
+      "id": "cabinet:9",
+      "centrality": 1.8598033963405274
+    },
+    {
+      "id": "object:38",
+      "centrality": 0.0
+    },
+    {
+      "id": "-:100",
+      "centrality": 0.4514712413588702
+    },
+    {
+      "id": "-:101",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.18190109207480612,
+      "weight_inv": 5.497493107895987,
+      "overlap_obb": 0.36371827041293353,
+      "overlap_geometry": 8.39137366786943e-05,
+      "center_difference": [
+        -0.11469954220187561,
+        -0.38774256633628174,
+        -0.04671118716387396
+      ],
+      "log_obb_volume_ratio": 1.9997670285307696,
+      "log_geom_volume_ratio": 1.2624714959259038,
+      "source": "wall:7",
+      "target": "counter:8"
+    },
+    {
+      "type": "touching",
+      "weight": 0.19702482545544606,
+      "weight_inv": 5.075502529634945,
+      "overlap_obb": 0.39228746244063956,
+      "overlap_geometry": 0.0017621884702525804,
+      "center_difference": [
+        0.13248048212573627,
+        -0.24464150377312965,
+        -0.08209064642155994
+      ],
+      "log_obb_volume_ratio": 1.8720843756575016,
+      "log_geom_volume_ratio": 1.4026055481037267,
+      "source": "wall:7",
+      "target": "-:100"
+    },
+    {
+      "type": "touching",
+      "weight": 0.14545194507521012,
+      "weight_inv": 6.875122910751872,
+      "overlap_obb": 0.2904004077303481,
+      "overlap_geometry": 0.0005034824200721658,
+      "center_difference": [
+        -0.1840327076787709,
+        -0.19178885813175728,
+        -0.5136357070830949
+      ],
+      "log_obb_volume_ratio": 3.1476440703872095,
+      "log_geom_volume_ratio": 1.479624983230761,
+      "source": "counter:8",
+      "target": "cabinet:9"
+    },
+    {
+      "type": "touching",
+      "weight": 0.05716482441281826,
+      "weight_inv": 17.493275108805662,
+      "overlap_obb": 0.11374225266888566,
+      "overlap_geometry": 0.0005873961567508601,
+      "center_difference": [
+        -0.49913313024424133,
+        -0.37705253594142485,
+        -0.39174335952113715
+      ],
+      "log_obb_volume_ratio": 3.629359947840045,
+      "log_geom_volume_ratio": 1.1433978824621274,
+      "source": "cabinet:9",
+      "target": "floor:1"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.36210508512593287,
+      "weight_inv": 2.7616292647539598,
+      "overlap_obb": 0.723874515305151,
+      "overlap_geometry": 0.0003356549467147772,
+      "center_difference": [
+        0.12239850273538688,
+        -0.2301353296861503,
+        -0.046429599769651664
+      ],
+      "log_obb_volume_ratio": 2.09373279429049,
+      "log_geom_volume_ratio": 1.3528902858771417,
+      "source": "object:38",
+      "target": "counter:8"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.3288061191591653,
+      "weight_inv": 3.0413059299420446,
+      "overlap_obb": 0.6575283245816519,
+      "overlap_geometry": 8.39137366786943e-05,
+      "center_difference": [
+        -0.24718002432761188,
+        -0.14310106256315208,
+        0.035379459257685986
+      ],
+      "log_obb_volume_ratio": 1.0682034712396038,
+      "log_geom_volume_ratio": 0.9000901911679451,
+      "source": "-:100",
+      "target": "counter:8"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.3807418849128731,
+      "weight_inv": 2.626451251164118,
+      "overlap_obb": 0.7592180989354215,
+      "overlap_geometry": 0.0022656708903247462,
+      "center_difference": [
+        -0.47996507618729833,
+        -0.11762403673514782,
+        -0.017831800054022295
+      ],
+      "log_obb_volume_ratio": 2.187540219242831,
+      "log_geom_volume_ratio": 1.2679983722333807,
+      "source": "-:101",
+      "target": "cabinet:9"
+    }
+  ]
+}

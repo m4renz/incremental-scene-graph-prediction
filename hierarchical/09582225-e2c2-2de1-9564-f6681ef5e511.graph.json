@@ -1,0 +1,153 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 0.0
+    },
+    {
+      "id": "wall:2",
+      "centrality": 2.0
+    },
+    {
+      "id": "chair:3",
+      "centrality": 0.0
+    },
+    {
+      "id": "chair:4",
+      "centrality": 0.6598231330929354
+    },
+    {
+      "id": "box:5",
+      "centrality": 0.0
+    },
+    {
+      "id": "object:6",
+      "centrality": 0.0
+    },
+    {
+      "id": "wall:7",
+      "centrality": 0.0
+    },
+    {
+      "id": "window:8",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.056092055312919074,
+      "weight_inv": 17.827836659243985,
+      "overlap_obb": 0.1087813424279258,
+      "overlap_geometry": 0.003402768197912356,
+      "center_difference": [
+        -0.18643023828764277,
+        0.4178152386573968,
+        0.4124258362065182
+      ],
+      "log_obb_volume_ratio": 1.8227832870960103,
+      "log_geom_volume_ratio": 1.0864282454449385,
+      "source": "floor:1",
+      "target": "wall:2"
+    },
+    {
+      "type": "touching",
+      "weight": 0.1378672443572565,
+      "weight_inv": 7.253354519864718,
+      "overlap_obb": 0.27490678834204785,
+      "overlap_geometry": 0.0008277003724651677,
+      "center_difference": [
+        -0.5188371999265902,
+        0.10573763137204639,
+        -0.09936382428126822
+      ],
+      "log_obb_volume_ratio": 5.53949931628558,
+      "log_geom_volume_ratio": 1.6109177986660315,
+      "source": "chair:3",
+      "target": "wall:2"
+    },
+    {
+      "type": "touching",
+      "weight": 0.144286901118328,
+      "weight_inv": 6.930636060857053,
+      "overlap_obb": 0.28848183552860435,
+      "overlap_geometry": 9.19667080516853e-05,
+      "center_difference": [
+        0.3357211705039586,
+        0.3571006466226634,
+        -0.08938718101969756
+      ],
+      "log_obb_volume_ratio": 5.29778730677132,
+      "log_geom_volume_ratio": 1.6098164681898877,
+      "source": "chair:4",
+      "target": "wall:2"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.3840800751850098,
+      "weight_inv": 2.6036237352804728,
+      "overlap_obb": 0.7681601503700196,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -0.008324986958789776,
+        0.12105381672752569,
+        -0.04810945922448284
+      ],
+      "log_obb_volume_ratio": 2.460891783063714,
+      "log_geom_volume_ratio": 1.334513265427071,
+      "source": "box:5",
+      "target": "chair:4"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.2908984689612131,
+      "weight_inv": 3.437625517834317,
+      "overlap_obb": 0.5808312874878835,
+      "overlap_geometry": 0.0009656504345426955,
+      "center_difference": [
+        -0.05157828006702431,
+        0.12449029055190386,
+        0.16161442964596595
+      ],
+      "log_obb_volume_ratio": 8.169761510193418,
+      "log_geom_volume_ratio": 1.7418616827329396,
+      "source": "object:6",
+      "target": "wall:2"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.1403603168946812,
+      "weight_inv": 7.124520819872086,
+      "overlap_obb": 0.2807206337893624,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        1.4969021960511812,
+        0.6915389430680021,
+        0.21426061484640802
+      ],
+      "log_obb_volume_ratio": 12.978978655693608,
+      "log_geom_volume_ratio": 2.250932112145746,
+      "source": "wall:7",
+      "target": "wall:2"
+    },
+    {
+      "type": "part_within",
+      "weight": 0.28980109712851404,
+      "weight_inv": 3.4506425610823137,
+      "overlap_obb": 0.5795562109030022,
+      "overlap_geometry": 4.598335402584265e-05,
+      "center_difference": [
+        -0.30701312862414337,
+        -0.013609628360569448,
+        -0.5420438007380075
+      ],
+      "log_obb_volume_ratio": 8.216473700366086,
+      "log_geom_volume_ratio": 1.8596126794158327,
+      "source": "window:8",
+      "target": "wall:2"
+    }
+  ]
+}

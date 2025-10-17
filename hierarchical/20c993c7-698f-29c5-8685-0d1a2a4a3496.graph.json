@@ -1,0 +1,89 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "floor:1",
+      "centrality": 2.0
+    },
+    {
+      "id": "chair:2",
+      "centrality": 0.0
+    },
+    {
+      "id": "table:3",
+      "centrality": 0.7746003920892525
+    },
+    {
+      "id": "wall:5",
+      "centrality": 0.0
+    }
+  ],
+  "links": [
+    {
+      "type": "touching",
+      "weight": 0.20344625396331892,
+      "weight_inv": 4.9153030862898,
+      "overlap_obb": 0.406812635722165,
+      "overlap_geometry": 7.987220447284345e-05,
+      "center_difference": [
+        -0.4055845105990615,
+        0.05727523439183091,
+        -0.4512234120848623
+      ],
+      "log_obb_volume_ratio": -1917.725001575851,
+      "log_geom_volume_ratio": 1.432964303055227,
+      "source": "chair:2",
+      "target": "floor:1"
+    },
+    {
+      "type": "weak_touching",
+      "weight": 0.2036599384227155,
+      "weight_inv": 4.910145842843207,
+      "overlap_obb": 0.407319876845431,
+      "overlap_geometry": 0.0,
+      "center_difference": [
+        -0.4093588575965627,
+        0.24242182756526998,
+        0.11620790715053009
+      ],
+      "log_obb_volume_ratio": 31.376590036918344,
+      "log_geom_volume_ratio": 1.5260361758230667,
+      "source": "chair:2",
+      "target": "table:3"
+    },
+    {
+      "type": "touching",
+      "weight": 0.19986299427454748,
+      "weight_inv": 5.003427491065812,
+      "overlap_obb": 0.3992467553222579,
+      "overlap_geometry": 0.0004792332268370607,
+      "center_difference": [
+        0.0037743469975012323,
+        -0.18514659317343907,
+        -0.5674313192353924
+      ],
+      "log_obb_volume_ratio": -61.119611765313444,
+      "log_geom_volume_ratio": 0.939010703519108,
+      "source": "table:3",
+      "target": "floor:1"
+    },
+    {
+      "type": "touching",
+      "weight": 0.12253592432499229,
+      "weight_inv": 8.160872050450932,
+      "overlap_obb": 0.2425159381068536,
+      "overlap_geometry": 0.0025559105431309905,
+      "center_difference": [
+        0.810745382135203,
+        -0.28462910346150516,
+        -0.4418246399064909
+      ],
+      "log_obb_volume_ratio": -2298.134647887795,
+      "log_geom_volume_ratio": 1.4023205020366192,
+      "source": "wall:5",
+      "target": "floor:1"
+    }
+  ]
+}
