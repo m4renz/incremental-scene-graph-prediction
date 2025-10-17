@@ -65,6 +65,11 @@ The pipeline consists of several optional processing steps:
 4. **Heterogeneous Graphs**: Always generated - creates graph representations
 5. **Embeddings**: Generates semantic embeddings for objects
 
+### Hierarchical edges
+
+To use the additional hierarchical edges move the `hierarchical` folder and its contents to `path/to/dataset/root`/`hetero_scene_graph`.
+The `hetero_scene_graph` subfolder is created by the `generate_hetero_graphs.py` script.
+
 ## Train and test models
 
 To train the models we use the pytorch lightning cli:
