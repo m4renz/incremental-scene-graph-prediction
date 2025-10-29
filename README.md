@@ -90,7 +90,7 @@ Alternatively you find code to run the models in the `getting_started.ipynb`.
 
 ## Known issues
 
-There is an issue concerning argparse for Python versions > 3.12.8.
+There is an issue concerning argparse for Python versions > 3.12.7.
 The ofscreen rendering has only been tested successfully on native Ubuntu 22.04, it fails for WSL.
 
 ## Citation
