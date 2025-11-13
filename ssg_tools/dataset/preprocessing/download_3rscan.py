@@ -38,7 +38,10 @@ def download_3rscan_data(
     pbar = tqdm(types)
     for type in pbar:
         pbar.set_description(f"downloading file type {type}...")
-        cmd = ["python", download_script, "-o", output_path, "--type", type, "--id", id]
+        cmd = ["python", download_script, "-o", output_path, "--type", type]
+        if id:
+            cmd.append("--id")
+            cmd.append(id)
         run_download(cmd, "./")
 
     if sequences:
