@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     download_3rscan_data(
         download_script=Path(args.download_script),
-        output_path=Path(args.dataset_path),
+        output_path=Path(args.dataset_path) / "3RScan",
         nworkers=args.workers,
         sequences=args.sequences,
         overwrite=args.overwrite,
