@@ -90,7 +90,8 @@ fi
 if [[ "${SKIP_JSON}" == "false" ]]; then
   echo "Running generate_gt_scenegraphs.py ..."
   python tools/generate_gt_scenegraphs.py \
-    --dataset_path "${DATASET_PATH_NOSLASH}"
+    --dataset_path "${DATASET_PATH_NOSLASH}" \
+    --overwrite
 
   echo "Running generate_splits.py ..."
   python tools/generate_splits.py \
