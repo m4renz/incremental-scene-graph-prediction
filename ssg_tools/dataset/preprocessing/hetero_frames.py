@@ -302,16 +302,13 @@ class PointCloudLoader:
 
         none_gt = torch.zeros((self.sg_handler.num_edge_classes,), dtype=torch.float32)
 
-        for u, v in self.sg_handler.neighbor_graph.to_directed().edges:
+        for u, v, _ in self.sg_handler.sg.to_directed().edges:
             if sg.has_node(u) and sg.has_node(v):
-                if self.sg_handler.sg.has_edge(u, v):
-                    sg.add_edge(
-                        u,
-                        v,
-                        edge_label=merge_edge_labels(self.sg_handler.sg[u][v], num_classes=self.sg_handler.num_edge_classes),
-                    )
-                else:
-                    sg.add_edge(u, v, edge_label=none_gt)
+                sg.add_edge(
+                    u,
+                    v,
+                    edge_label=merge_edge_labels(self.sg_handler.sg[u][v], num_classes=self.sg_handler.num_edge_classes),
+                )
 
         self.queue.put((frame, sg))
 
